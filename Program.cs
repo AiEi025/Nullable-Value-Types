@@ -16,16 +16,18 @@ namespace Nullable_Value_Types
 
             Nullable<int> num3 = new Nullable<int>();
             num3 = null;
-            int? numew = num3;//همان نال ایبل بودن است
+            int? num12 = null;
+            Console.WriteLine(num12.HasValue);
+            int? numew = num3;//همان تعریف  نال ایبل بودن است
             if (numew.HasValue)
             {
                 Console.Write(numew);
             }
             else
             {
-                Console.WriteLine(numew.GetValueOrDefault());
+                Console.WriteLine(numew.GetValueOrDefault());//با این کار اکسپشن رخ نمی دهد مقدار عددی نال را برمیگرداند = 0
             }
-            
+            Console.ReadLine();
 
 
 
